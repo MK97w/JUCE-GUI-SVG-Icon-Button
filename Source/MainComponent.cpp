@@ -11,7 +11,7 @@ struct sizeMenuPage : public Component
 //==============================================================================
 MainComponent::MainComponent()
 {
-    sizeMenu.addItem("Small",[&](){setSize(720,520);});
+    sizeMenu.addItem("Small",[&](){setSize(725,520);});
     sizeMenu.addItem("Medium",[&](){setSize(1000,730);});
     sizeMenu.addItem("Large",[&](){setSize(1080,780);});
     addAndMakeVisible(buttonOne);
