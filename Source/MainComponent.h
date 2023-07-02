@@ -24,11 +24,20 @@ private:
     //==============================================================================
     
     // Your private member variables go here...
-    TextButton buttonOne {"Size"};
-    TextButton buttonTwo {"Website"};
-    TextButton buttonThree {"Button Three"};
+    ShapeButton buttonOne {"Size",juce::Colours::grey,
+        juce::Colours::white,
+        juce::Colours::white};
+   /* ShapeButton buttonTwo {"Website",juce::Colours::white,
+        juce::Colours::white,
+        juce::Colours::white};
+    ShapeButton buttonThree {"Settings",juce::Colours::white,
+        juce::Colours::white,
+        juce::Colours::white};
+    */
+    TextButton buttonTwo{"Website"};
+    TextButton buttonThree{"Settings"};
     PopupMenu sizeMenu;
-    ComboBox sizeMenuCombo;
+    Component::SafePointer<DocumentWindow> window;
     
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainComponent)
 };
