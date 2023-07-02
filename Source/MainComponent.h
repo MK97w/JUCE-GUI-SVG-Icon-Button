@@ -25,9 +25,10 @@ private:
     
     // Your private member variables go here...
     TextButton buttonOne {"Size"};
-    TextButton buttonTwo {"Button Two"};
+    TextButton buttonTwo {"Website"};
     TextButton buttonThree {"Button Three"};
     PopupMenu sizeMenu;
+    ComboBox sizeMenuCombo;
     
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainComponent)
 };

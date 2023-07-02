@@ -14,6 +14,7 @@ MainComponent::MainComponent()
     sizeMenu.addItem("Small",[&](){setSize(725,520);});
     sizeMenu.addItem("Medium",[&](){setSize(1000,730);});
     sizeMenu.addItem("Large",[&](){setSize(1080,780);});
+    
     addAndMakeVisible(buttonOne);
     //buttonOne.setToggleState(true, NotificationType::dontSendNotification);
     buttonOne.onClick = [&]
@@ -26,7 +27,11 @@ MainComponent::MainComponent()
  
     addAndMakeVisible(buttonTwo);
    // buttonTwo.setToggleState(true, NotificationType::dontSendNotification);
-   // buttonTwo.onClick = [this](){setSize(1080,800);};
+    buttonTwo.onClick = [&]()
+    {
+        URL("https://juce.com").launchInDefaultBrowser();
+        
+    };
     
     addAndMakeVisible(buttonThree);
   //  buttonThree.setToggleState(true, NotificationType::dontSendNotification);
