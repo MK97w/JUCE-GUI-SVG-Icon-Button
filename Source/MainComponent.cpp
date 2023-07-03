@@ -87,8 +87,8 @@ void MainComponent::resized()
     auto space = 10;
     
     buttonOne.setBounds(leftMargin,getHeight()-bottomMargin,80,80);
-    buttonTwo.setBounds(buttonOne.getX()+space+buttonOne.getWidth(),buttonOne.getY() ,100, 80);
-    buttonThree.setBounds(buttonTwo.getX()+space+buttonOne.getWidth(),buttonOne.getY() ,100, 80);
+    buttonTwo.setBounds(buttonOne.getX()+space+buttonOne.getWidth(),buttonOne.getY() ,80,80);
+    buttonThree.setBounds(buttonTwo.getX()+space+buttonOne.getWidth(),buttonOne.getY() ,80, 80);
 
 }
 
