@@ -14,7 +14,7 @@
 class popUpWindow: public juce::DocumentWindow
 {
 public:
-    popUpWindow( juce::String name );
+    popUpWindow( const juce::String& name, juce::Colour backgroundColour, int buttonsNeeded );
     void closeButtonPressed() override;
 
 private:

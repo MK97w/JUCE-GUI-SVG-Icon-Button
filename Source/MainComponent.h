@@ -38,7 +38,7 @@ private:
     TextButton buttonTwo{"Website"};
     TextButton buttonThree{"Settings"};
     PopupMenu sizeMenu;
-    Component::SafePointer<popUpWindow> window;
+    Component::SafePointer<popUpWindow> settingsWindow;
     
     
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainComponent)

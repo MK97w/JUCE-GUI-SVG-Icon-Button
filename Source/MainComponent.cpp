@@ -30,20 +30,21 @@ MainComponent::MainComponent()
                                   .withPreferredPopupDirection(juce::PopupMenu::Options::PopupDirection::upwards));
         
     };
- 
     addAndMakeVisible(buttonTwo);
    // buttonTwo.setToggleState(true, NotificationType::dontSendNotification);
     buttonTwo.onClick = [&]
     {
-        URL("https://juce.com").launchInDefaultBrowser();
-        
+        URL("https://juce.com").launchInDefaultBrowser();      
     };
-    
     addAndMakeVisible(buttonThree);
   //  buttonThree.setToggleState(true, NotificationType::dontSendNotification);
- buttonThree.onClick = [&]
+    buttonThree.onClick = [&]
     {
-        
+        settingsWindow = new popUpWindow("Settings",Colours::black, DocumentWindow::allButtons);
+        settingsWindow->setUsingNativeTitleBar(true);
+        settingsWindow->setDraggable(false);
+        settingsWindow->centreWithSize(200 ,100);
+        settingsWindow->setVisible(true);
         
     };
 

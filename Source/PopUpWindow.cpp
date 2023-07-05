@@ -10,13 +10,10 @@
 
 #include "PopUpWindow.h"
 
-popUpWindow::popUpWindow(juce::String name)
-            :DocumentWindow (name,
-                             juce::Desktop::getInstance().getDefaultLookAndFeel()
-                             .findColour (juce::ResizableWindow::backgroundColourId),
-                             DocumentWindow::allButtons)
-{
-}
+popUpWindow::popUpWindow(const juce::String& name, juce::Colour backgroundColour, int buttonsNeeded)
+    : DocumentWindow (name, backgroundColour, buttonsNeeded)
+    {
+    }
 
 void popUpWindow::closeButtonPressed()
 {
