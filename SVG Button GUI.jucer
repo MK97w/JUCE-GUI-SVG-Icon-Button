@@ -4,11 +4,13 @@
               addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1">
   <MAINGROUP id="MaeiIt" name="SVG Button GUI">
     <GROUP id="{9AA574E5-340A-C377-FBA1-96B0B6953167}" name="Source">
+      <FILE id="TdASoZ" name="PopUpWindow.cpp" compile="1" resource="0" file="Source/PopUpWindow.cpp"/>
       <FILE id="x3z2xb" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
       <FILE id="uT31Wh" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
       <FILE id="WSbjQl" name="MainComponent.cpp" compile="1" resource="0"
             file="Source/MainComponent.cpp"/>
     </GROUP>
+    <FILE id="IePjpj" name="PopUpWindow.h" compile="0" resource="0" file="Source/PopUpWindow.h"/>
   </MAINGROUP>
   <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
   <EXPORTFORMATS>

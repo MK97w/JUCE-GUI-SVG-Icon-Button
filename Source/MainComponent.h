@@ -1,6 +1,7 @@
 #pragma once
 
 #include <JuceHeader.h>
+#include "PopUpWindow.h"
 using namespace juce;
 //==============================================================================
 /*
@@ -37,7 +38,8 @@ private:
     TextButton buttonTwo{"Website"};
     TextButton buttonThree{"Settings"};
     PopupMenu sizeMenu;
-    Component::SafePointer<DocumentWindow> window;
+    Component::SafePointer<popUpWindow> window;
+    
     
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainComponent)
 };

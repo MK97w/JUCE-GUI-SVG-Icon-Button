@@ -10,6 +10,7 @@
 		326878B689396CA9701F8BF4 /* include_juce_graphics.mm */ = {isa = PBXBuildFile; fileRef = 79998574BB0D6BCF79363170; };
 		3D21A6C1C4852EA0E07A8DFC /* include_juce_events.mm */ = {isa = PBXBuildFile; fileRef = BA8CA6F01608C1F2E4D7F9D0; };
 		48280B3EE640852AB860D048 /* QuartzCore.framework */ = {isa = PBXBuildFile; fileRef = AC0BD489B935244694F64471; };
+		55DF56CFC55857440757FFCE /* PopUpWindow.cpp */ = {isa = PBXBuildFile; fileRef = BEE2A759CF7211EA5A4A6F46; };
 		565C41A54EE13E131F714D95 /* Main.cpp */ = {isa = PBXBuildFile; fileRef = 24441E87B2D56643F870958F; };
 		6AA88A15EE9E3A20B9C473B5 /* MainComponent.cpp */ = {isa = PBXBuildFile; fileRef = 2FFD816C27BE1C2D42F2708D; };
 		7269B8D57285BDD1F563D761 /* include_juce_gui_basics.mm */ = {isa = PBXBuildFile; fileRef = 8FF30147A95C38FFA62451C0; };
@@ -28,6 +29,7 @@
 		24441E87B2D56643F870958F /* Main.cpp */ /* Main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Main.cpp; path = ../../Source/Main.cpp; sourceTree = SOURCE_ROOT; };
 		2FFD816C27BE1C2D42F2708D /* MainComponent.cpp */ /* MainComponent.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MainComponent.cpp; path = ../../Source/MainComponent.cpp; sourceTree = SOURCE_ROOT; };
 		3DED4724D8647DD3FA0D4321 /* include_juce_core.mm */ /* include_juce_core.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_core.mm; path = ../../JuceLibraryCode/include_juce_core.mm; sourceTree = SOURCE_ROOT; };
+		4EDF36F1DBEB2C831D5F1DFD /* PopUpWindow.h */ /* PopUpWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PopUpWindow.h; path = ../../Source/PopUpWindow.h; sourceTree = SOURCE_ROOT; };
 		54884C63D85A1480348ADFAE /* RecentFilesMenuTemplate.nib */ /* RecentFilesMenuTemplate.nib */ = {isa = PBXFileReference; lastKnownFileType = file.nib; name = RecentFilesMenuTemplate.nib; path = RecentFilesMenuTemplate.nib; sourceTree = SOURCE_ROOT; };
 		70F5BB6C6AD1A0D898D57E9E /* MainComponent.h */ /* MainComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainComponent.h; path = ../../Source/MainComponent.h; sourceTree = SOURCE_ROOT; };
 		7694C0FC7F600ADB344A8C88 /* Foundation.framework */ /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -41,6 +43,7 @@
 		AC0BD489B935244694F64471 /* QuartzCore.framework */ /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		ACAE2F87312D830912BAAC19 /* juce_core */ /* juce_core */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_core; path = "~/JUCE/modules/juce_core"; sourceTree = "<absolute>"; };
 		BA8CA6F01608C1F2E4D7F9D0 /* include_juce_events.mm */ /* include_juce_events.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_events.mm; path = ../../JuceLibraryCode/include_juce_events.mm; sourceTree = SOURCE_ROOT; };
+		BEE2A759CF7211EA5A4A6F46 /* PopUpWindow.cpp */ /* PopUpWindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = PopUpWindow.cpp; path = ../../Source/PopUpWindow.cpp; sourceTree = SOURCE_ROOT; };
 		D4C8016208A83ED510F51C84 /* juce_gui_basics */ /* juce_gui_basics */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_gui_basics; path = "~/JUCE/modules/juce_gui_basics"; sourceTree = "<absolute>"; };
 		E55C792BF60148C3B7EA06BD /* App */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SVG Button GUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC621B10E1A3719F79E2BF72 /* juce_events */ /* juce_events */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_events; path = "~/JUCE/modules/juce_events"; sourceTree = "<absolute>"; };
@@ -130,6 +133,7 @@
 		EA1DC7859DFBD8A8E0A75615 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				BEE2A759CF7211EA5A4A6F46,
 				24441E87B2D56643F870958F,
 				70F5BB6C6AD1A0D898D57E9E,
 				2FFD816C27BE1C2D42F2708D,
@@ -141,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				EA1DC7859DFBD8A8E0A75615,
+				4EDF36F1DBEB2C831D5F1DFD,
 			);
 			name = "SVG Button GUI";
 			sourceTree = "<group>";
@@ -230,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55DF56CFC55857440757FFCE,
 				565C41A54EE13E131F714D95,
 				6AA88A15EE9E3A20B9C473B5,
 				827AEF299B697497EEFAA4FA,

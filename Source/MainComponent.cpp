@@ -41,24 +41,12 @@ MainComponent::MainComponent()
     
     addAndMakeVisible(buttonThree);
   //  buttonThree.setToggleState(true, NotificationType::dontSendNotification);
-/*    buttonThree.onClick = [&]
+ buttonThree.onClick = [&]
     {
-        if (window)
-            window->broughtToFront();
-        else
-        {
-            window = new DocumentWindow ("Settings",
-                                            juce::Desktop::getInstance().getDefaultLookAndFeel()
-                                                                        .findColour (juce::ResizableWindow::backgroundColourId),
-                                            DocumentWindow::allButtons,
-                                            true);
-            window->addToDesktop();
-            window->centreWithSize(600, 400);
-            window->setVisible (true);
-        }
+        
         
     };
-*/
+
     setSize (720, 520);
     
 
