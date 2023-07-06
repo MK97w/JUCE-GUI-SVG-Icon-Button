@@ -55,6 +55,7 @@ MainComponent::MainComponent()
 
 MainComponent::~MainComponent()
 {
+    if(settingsWindow) settingsWindow->closeButtonPressed();
 }
 
 //==============================================================================
